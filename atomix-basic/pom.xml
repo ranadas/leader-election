@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.rdas</groupId>
+		<artifactId>leader-election-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>atomix-basic-service</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>atomix-basic-service</name>
+	<description>atomix-basic-service.</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.atomix</groupId>
+			<artifactId>atomix</artifactId>
+			<version>3.1.0-beta2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.atomix</groupId>
+			<artifactId>atomix-raft</artifactId>
+			<version>${atomix.version}</version>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>io.atomix</groupId>-->
+<!--			<artifactId>atomix-log</artifactId>-->
+<!--			<version>${atomix.version}</version>-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>io.atomix</groupId>
+			<artifactId>atomix-primary-backup</artifactId>
+			<version>${atomix.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.30</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+		</plugins>
+	</build>
+</project>
